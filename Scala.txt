@@ -1,5 +1,7 @@
-
 Funciones anonimas
+
+val y = (x : Int) => { x * x}
+Uso : y(7) -> 49
 
 Funciones pasadas por parametro
 	
@@ -19,6 +21,12 @@ Recursividad
 
 TailRecursion
 
+def  fact(x : Int) : Int = {
+     |     def factAux( n : Int , acc : Int) : Int = {
+     |           if( n == 1 || n == 0 ) acc else factAux(n - 1 , acc * n)
+     |     }
+     |     factAux(x,1)
+     | }
  
 
 Listas
